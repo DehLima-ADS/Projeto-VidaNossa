@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Posto Vida Nossa — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="img/icon.svg" alt="ícone">
+        <div>
+          <h3>Posto Vida Nossa</h3>
+          <small>Sistema de Agendamentos</small>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav-menu">
+        <button data-target="dashboard" class="active">Dashboard</button>
+        <button data-target="agendamentos">Agendamentos</button>
+        <button data-target="pacientes">Pacientes</button>
+        <button id="btn-logout">Sair</button>
+      </nav>
+
+      <div style="margin-top:auto;color:rgba(255,255,255,0.8);font-size:13px">
+        © Posto Vida Nossa
+      </div>
+    </aside>
+
+    <main class="main">
+      <div id="dashboard" class="card section">
+        <h2>Bem-vindo ao painel do Posto Vida Nossa!</h2>
+        <p>Resumo rápido das operações do posto e indicadores gerais.</p>
+        <div class="card">
+          <h3>Indicadores (simulados)</h3>
+          <p>Pacientes cadastrados: <strong id="count-pacientes">12</strong></p>
+          <p>Agendamentos totais: <strong id="count-agendamentos">8</strong></p>
+          <p>Agendamentos próximos: <strong id="count-proximos">3</strong></p>
+        </div>
+      </div>
+
+      <div id="agendamentos" class="card section" style="display:none">
+        <h2>Agendamentos</h2>
+        <p>Aqui você pode visualizar e gerenciar os agendamentos do posto.</p>
+        <table style="width:100%;border-collapse:collapse">
+          <thead>
+            <tr style="text-align:left"><th>Paciente</th><th>Data</th><th>Hora</th><th>Motivo</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Maria Silva</td><td>2025-11-10</td><td>09:00</td><td>Consulta Geral</td></tr>
+            <tr><td>João Souza</td><td>2025-11-11</td><td>10:30</td><td>Retorno</td></tr>
+            <tr><td>Aline Costa</td><td>2025-11-12</td><td>14:00</td><td>Vacinação</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="pacientes" class="card section" style="display:none">
+        <h2>Pacientes</h2>
+        <p>Lista de pacientes cadastrados no sistema (dados simulados).</p>
+        <ul>
+          <li>Maria Silva — CPF: 000.000.000-00 — (11) 99999-0000</li>
+          <li>João Souza — CPF: 111.111.111-11 — (11) 98888-1111</li>
+          <li>Aline Costa — CPF: 222.222.222-22 — (11) 97777-2222</li>
+        </ul>
+      </div>
+
+      <footer class="footer">
+        Posto Vida Nossa — Sistema de Agendamentos
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

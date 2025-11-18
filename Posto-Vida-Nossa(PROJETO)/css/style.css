@@ -1,0 +1,34 @@
+:root{
+  --primary:#2E7D32;
+  --accent:#1976D2;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;}
+body{margin:0;background:var(--bg);color:#072028}
+.centered{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{background:var(--card);border-radius:12px;box-shadow:0 8px 24px rgba(2,6,23,0.08);padding:18px}
+.login-card{width:420px;max-width:92%}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.brand-icon{width:48px;height:48px}
+h1{margin:0;font-size:20px;color:var(--primary)}
+h2{margin-top:6px;margin-bottom:8px}
+label{display:block;margin-bottom:10px;font-size:14px}
+input{width:100%;padding:10px;border:1px solid #e6edf2;border-radius:8px;font-size:14px}
+.actions{margin-top:12px;text-align:right}
+button{background:var(--primary);border:none;color:white;padding:10px 14px;border-radius:8px;cursor:pointer}
+.login-footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px}
+/* Dashboard layout */
+.layout{display:flex;min-height:100vh}
+.sidebar{width:260px;background:linear-gradient(180deg,var(--primary),var(--accent));color:white;padding:20px;display:flex;flex-direction:column;gap:18px}
+.sidebar .logo{display:flex;align-items:center;gap:10px}
+.sidebar .logo img{width:40px;height:40px}
+.sidebar h3{margin:0;font-size:18px}
+.nav{display:flex;flex-direction:column;gap:8px}
+.nav button{background:transparent;border:none;color:white;text-align:left;padding:10px;border-radius:8px;cursor:pointer;font-size:15px}
+.nav button.active{background:rgba(255,255,255,0.08)}
+.main{flex:1;padding:24px;background:var(--bg)}
+.card.section{margin-bottom:16px}
+.footer{padding:12px;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:800px){.sidebar{display:none}.layout{flex-direction:column}}

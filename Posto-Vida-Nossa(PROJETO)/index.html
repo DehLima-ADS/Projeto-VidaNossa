@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Posto Vida Nossa — Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+  <main class="centered">
+    <div class="card login-card">
+      <div class="brand">
+        <img src="img/icon.svg" alt="Ícone" class="brand-icon">
+        <h1>Posto Vida Nossa</h1>
+      </div>
+      <h2>Entrar</h2>
+      <p>Digite qualquer nome de usuário e qualquer senha para acessar.</p>
+      <form id="login-form">
+        <label>Usuário
+          <input id="username" autocomplete="username" required>
+        </label>
+        <label>Senha
+          <input id="password" type="password" autocomplete="current-password" required>
+        </label>
+        <div class="actions">
+          <button type="submit">Entrar</button>
+        </div>
+      </form>
+      <footer class="login-footer">
+        <small>Posto Vida Nossa — Sistema de Agendamentos</small>
+      </footer>
+    </div>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>
